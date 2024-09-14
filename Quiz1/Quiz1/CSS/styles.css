@@ -1,0 +1,112 @@
+:root{
+    /*COLORES*/
+    --color-negro: #000000;
+    --color-amarillo: #FFC000;
+    --color-gris: #A5A5A5;
+    --color-azul:#5B9BD5;
+    --color-blanco:#ffffff;
+    --color-verde:#70AD47;
+    /*BORDES*/
+    --borde-amarillo: #b48700;
+    --borde-gris: #727272;
+    --borde-azul:#00386d;
+    --borde-blanco:#070707;
+    --borde-verde:#438119;
+}
+body{
+    background-color: var(--color-azul);
+}
+
+.main-container{
+    background-color: var(--color-azul);
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100vh;
+}
+.header-container{
+    display: flex;
+    background-color: var(--color-amarillo);
+    border: 2px solid var(--borde-amarillo);
+    border-radius: 10px;
+    height: 10%;
+    padding: 1%;
+    justify-content: space-between;
+}
+.logo{
+    background-color: var(--color-verde);
+    border: 2px solid var(--borde-verde);
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+}
+.social-container{
+    display: flex;
+    background-color: var(--color-gris);
+    border: 2px solid var(--borde-gris);
+    border-radius: 10px;
+    width: 30%;
+    padding: 0.3%;
+    justify-content: right;
+}
+.social{
+    border: 2px solid var(--borde-gris);
+    height: 70%;
+    width: 15%;
+    border-radius: 10px;
+    margin: 3px;
+    text-align: center;
+}
+.nav-container{
+    background-color: var(--color-negro);
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 8%;
+    padding: 10px;
+}
+.button-container{
+    display: flex;
+    background-color: var(--color-azul);
+    border: 2px solid var(--borde-azul);
+    border-radius: 10px;
+    height: 100%;
+}
+.button{
+    background-color: var(--color-amarillo);
+    border: 2px solid var(--borde-amarillo);
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 15%;
+    margin-top: 0.1%;
+    margin-bottom: 0.5%;
+}
+.slider-container{
+    background-color: var(--color-negro);
+    border-radius: 20px;
+    color: var(--color-blanco);
+    height: 40%;
+    padding: 2%;
+}
+
+.feature-container{
+    display: flex;
+    background-color: var(--color-blanco);
+    border: 2px solid var(--borde-blanco);
+    border-radius: 20px;
+    margin: 5px;
+    height: 45%;
+    justify-content: space-between;
+}
+.feat{
+    background-color: var(--color-negro);
+    border-radius: 20px;
+    width: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: var(--color-blanco);
+    text-align: center;
+}
