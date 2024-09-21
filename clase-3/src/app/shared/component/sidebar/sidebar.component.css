@@ -1,0 +1,21 @@
+.sidebar a{
+
+padding: 15px;
+text-decoration: none;
+font-size: 18px;
+color: blanchedalmond;
+display: block;
+
+}
+
+.sidebar a:hover{
+
+background-color: #575757;
+
+}
+.content{
+
+margin-left: 260px;
+padding: 20px;
+
+}
