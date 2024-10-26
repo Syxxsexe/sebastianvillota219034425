@@ -8,7 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ButtonModule, FormularioPlantilla1Component,LoginComponent,ReactiveFormsModule],
+  imports: [RouterOutlet, ButtonModule, FormularioPlantilla1Component,LoginComponent,ReactiveFormsModule, LoginComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
