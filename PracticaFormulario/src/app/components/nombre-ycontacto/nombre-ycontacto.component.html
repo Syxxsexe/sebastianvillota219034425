@@ -1,0 +1,37 @@
+<div class="p-fluid">
+    <form [formGroup]="contactoForm" (ngSubmit)="onSubmit()">
+      <div class="p-field">
+        <label for="name">Nombre</label>
+        <input id="name" type="text" pInputText formControlName="name" />
+        <div *ngIf="contactoForm.controls['name'].invalid && contactoForm.controls['name'].touched" class="error">
+          El nombre es requerido
+        </div>
+      </div>
+      <div class="p-field">
+        <label for="lastname">Apellido</label>
+        <input id="lastname" type="text" pInputText formControlName="lastname" />
+        <div *ngIf="contactoForm.controls['lastname'].invalid && contactoForm.controls['lastname'].touched" class="error">
+          El apellido es requerido
+        </div>
+      </div>
+  
+      <div class="p-field">
+        <label for="email">Correo electrónico</label>
+        <input id="email" type="email" pInputText formControlName="email" />
+        <div *ngIf="contactoForm.controls['email'].invalid && contactoForm.controls['email'].touched" class="error">
+          Correo no válido
+        </div>
+      </div>
+  
+      <div class="p-field">
+        <label for="numberphone">Telefono</label>
+        <input id="numberphone" type="number" pPassword formControlName="numberphone" />
+        <div *ngIf="contactoForm.controls['numberphone'].invalid && contactoForm.controls['numberphone'].touched" class="error">
+          El telefono debe tener al menos 10 caracteres
+        </div>
+      </div>
+  
+     
+    </form>
+  </div>
+  

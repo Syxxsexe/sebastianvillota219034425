@@ -1,0 +1,20 @@
+<div class="p-fluid">
+    <form [formGroup]="detallesForm" (ngSubmit)="onSubmit()">
+
+      <div class="p-field">
+        <label for="firstdate">Fecha de Salida</label>
+        <p-calendar id="firstdate" formControlName="firstdate"></p-calendar>
+        <div *ngIf="detallesForm.controls['firstdate'].invalid && detallesForm.controls['firstdate'].touched" class="error">
+          La fecha es requerida
+        </div>
+      </div>
+
+      <div class="p-field">
+        <label for="lastdate">Fecha de Llegada</label>
+        <p-calendar id="lastdate" formControlName="lastdate"></p-calendar>
+        <div *ngIf="detallesForm.controls['lastdate'].invalid && detallesForm.controls['lastdate'].touched" class="error">
+          La fecha es requerida
+        </div>
+      </div>
+    </form>
+  </div>
