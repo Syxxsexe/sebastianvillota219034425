@@ -6,8 +6,9 @@ import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { Validators } from '@angular/forms';
-import { Dropdown, DropdownModule } from 'primeng/dropdown';
+import { DropdownModule } from 'primeng/dropdown';
 import { CalendarModule } from 'primeng/calendar';
+import { LoginService } from '../../services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -20,7 +21,7 @@ export class LoginComponent {
 userForm: FormGroup;
   
 
-constructor(private fb: FormBuilder){
+constructor(private fb: FormBuilder, private loginService: LoginService){
 
 this.userForm = this.fb.group({
 
@@ -32,7 +33,9 @@ this.userForm = this.fb.group({
 }
 
 onSubmit(){
-if(this.userForm.value){
+if(this.userForm.valid){
+  const {email,password} = this.userForm.value;
+  this.loginService.login(email, password).subscribe(Response =>{console.log("Exitoso", Response)})
 console.log(this.userForm);
 }else{
 console.log("Formulario Invalido");
